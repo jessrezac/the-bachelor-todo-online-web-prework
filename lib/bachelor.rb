@@ -54,12 +54,10 @@ def get_occupation(data, hometown)
 
   contestant = data.each do |season_label, contestants|
       contestants.each do |contestant_details|
-        while contestant_occupation == ""
+        if contestant_occupation == ""
           if contestant_details["hometown"] == hometown
             contestant_occupation = contestant_details["occupation"]
           end
-        else
-          break
         end
       end
   end
