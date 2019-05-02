@@ -77,7 +77,7 @@ def get_average_age_for_season(data, season)
     end
   end
 
-  mean = season_ages.sum(0.0) / mean.length
+  mean = season_ages.sum(0.0) / season_ages.length
 
   mean
 
