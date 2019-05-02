@@ -80,6 +80,5 @@ def get_average_age_for_season(data, season)
 
   binding.pry
 
-  winning_contestant = winning_contestant.split[0]
 
 end
